@@ -31,8 +31,6 @@ body {
     align-items: center;
 }
 
-
-
 .about .row .image img{
     height: 35rem;
     width: 350px;
@@ -45,6 +43,9 @@ body {
     text-align: center;
     width: 28rem;
     box-shadow: 0.3rem .5rem rgba(0, 0, 0, .3);
+}
+.about .row .image img:hover{
+    filter: grayscale(0);
 }
 
 .about .row .content{
@@ -80,6 +81,86 @@ body {
     opacity: .8;
 }
 
+#content {
+    display: flex;        
+    flex-wrap: wrap;      
+    visibility: hidden;   
+    opacity: 0;          
+    transition: opacity 0.3s ease;
+}
+
+#content.visible {
+    visibility: visible;  
+    opacity: 1;           
+}
+
+
+.more-info .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.more-info .box-container .box{
+    height: 40rem;
+    width: 25rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0.3rem .5rem rgba(0, 0, 0, .3);
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.more-info .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: rgba(43, 46, 226, 0.63);
+    font-size: 3rem;
+    margin: 2rem 0;
+    transition: .2s;
+}
+
+.more-info .box-container .box h3{
+    font-size: 2rem;
+    color: rgba(43, 46, 226, 0.63);
+    transition: .2s;
+}
+
+.more-info .box-container .box p{
+    font-size: 1.3rem;
+    padding: 7rem 2rem;
+    bottom: -25%  2rem;
+    color: #666;
+}
+
+.more-info .box-container .box li{
+    list-style: none;
+    font-size: 1.2rem;
+    color: #666;
+
+}
+
+.more-info .box-container .box:hover h3{
+    color: #666;
+}
+
+
+.more-info::before{
+    content: '';
+    position: absolute;
+    bottom: -25%; left: 50%;
+    transform: translateX(-50%);
+    border-top: 70vh solid #fff;
+    width: 120%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
 
 .heading{
     font-size: 3rem;
@@ -108,7 +189,6 @@ body {
     flex-wrap: wrap;
     padding: 2rem 0;
 }
-
 
 .friends .card-container .card{
     padding: 2rem;
