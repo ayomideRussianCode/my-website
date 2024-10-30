@@ -10,13 +10,14 @@ body {
     box-sizing: border-box;
 
 }
-.container{
+
+.container {
     background: #f9f9f9;
 }
 
-.about-me-heading{
+.about-me-heading {
     font-size: 4rem;
-    color: rgba(43, 46, 226, 0.63) ;
+    color: rgba(43, 46, 226, 0.63);
     text-align: center;
     padding: 0 1rem;
     padding-top: 6rem;
@@ -25,13 +26,13 @@ body {
 }
 
 
-.about .row{
+.about .row {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.about .row .image img{
+.about .row .image img {
     height: 35rem;
     width: 350px;
     padding: 2rem;
@@ -44,27 +45,28 @@ body {
     width: 28rem;
     box-shadow: 0.3rem .5rem rgba(0, 0, 0, .3);
 }
-.about .row .image img:hover{
+
+.about .row .image img:hover {
     filter: grayscale(0);
 }
 
-.about .row .content{
-    padding-left:5rem;
+.about .row .content {
+    padding-left: 5rem;
 }
 
-.about .row .content h4{
+.about .row .content h4 {
     font-size: 3rem;
     color: rgba(43, 46, 226, 0.63);
 }
 
-.about .row .content p{
+.about .row .content p {
     font-size: 1.6rem;
     color: #101010;
     padding: 1rem 0;
 }
 
-.about .row .content button{
-    height:3.6rem;
+.about .row .content button {
+    height: 3.6rem;
     width: 17rem;
     background: rgba(43, 46, 226, 0.63);
     color: #fff;
@@ -76,32 +78,32 @@ body {
     transition: .2rem;
 }
 
-.about .row .content button:hover{
+.about .row .content button:hover {
     letter-spacing: .2rem;
     opacity: .8;
 }
 
 #content {
-    display: flex;        
-    flex-wrap: wrap;      
-    visibility: hidden;   
-    opacity: 0;          
+    display: flex;
+    flex-wrap: wrap;
+    visibility: hidden;
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 #content.visible {
-    visibility: visible;  
-    opacity: 1;           
+    visibility: visible;
+    opacity: 1;
 }
 
 
-.more-info .box-container{
+.more-info .box-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.more-info .box-container .box{
+.more-info .box-container .box {
     height: 40rem;
     width: 25rem;
     background: #fff;
@@ -112,7 +114,7 @@ body {
     cursor: pointer;
 }
 
-.more-info .box-container .box i{
+.more-info .box-container .box i {
     height: 6rem;
     width: 6rem;
     line-height: 6rem;
@@ -125,35 +127,36 @@ body {
     transition: .2s;
 }
 
-.more-info .box-container .box h3{
+.more-info .box-container .box h3 {
     font-size: 2rem;
     color: rgba(43, 46, 226, 0.63);
     transition: .2s;
 }
 
-.more-info .box-container .box p{
+.more-info .box-container .box p {
     font-size: 1.3rem;
     padding: 7rem 2rem;
-    bottom: -25%  2rem;
+    bottom: -25% 2rem;
     color: #666;
 }
 
-.more-info .box-container .box li{
+.more-info .box-container .box li {
     list-style: none;
     font-size: 1.2rem;
     color: #666;
 
 }
 
-.more-info .box-container .box:hover h3{
+.more-info .box-container .box:hover h3 {
     color: #666;
 }
 
 
-.more-info::before{
+.more-info::before {
     content: '';
     position: absolute;
-    bottom: -25%; left: 50%;
+    bottom: -25%;
+    left: 50%;
     transform: translateX(-50%);
     border-top: 70vh solid #fff;
     width: 120%;
@@ -162,7 +165,7 @@ body {
 }
 
 
-.heading{
+.heading {
     font-size: 3rem;
     display: flex;
     justify-content: center;
@@ -170,7 +173,7 @@ body {
     padding-top: 1rem;
 }
 
-.title{
+.title {
     font-size: 2rem;
     color: rgba(43, 46, 226, 0.63);
     display: flex;
@@ -178,11 +181,11 @@ body {
     align-items: center;
 }
 
-.friends{
+.friends {
     background: #f9f9f9;
 }
 
-.friends .card-container{
+.friends .card-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,7 +193,7 @@ body {
     padding: 2rem 0;
 }
 
-.friends .card-container .card{
+.friends .card-container .card {
     padding: 2rem;
     margin: 2rem;
     background: #fff;
@@ -199,7 +202,7 @@ body {
     box-shadow: 0.3rem .5rem rgba(0, 0, 0, .3);
 }
 
-.friends .card-container .card img{
+.friends .card-container .card img {
     height: 30rem;
     width: 300px;
     object-fit: cover;
@@ -207,28 +210,28 @@ body {
     transition: .2s;
 }
 
-.friends .card-container .card:hover img{
+.friends .card-container .card:hover img {
     filter: grayscale(0);
 }
 
-.friends .card-container .card h5{
+.friends .card-container .card h5 {
     color: rgba(43, 46, 226, 0.63);
     font-size: 2rem;
     padding: .5rem;
 }
 
-.friends .card-container .card p{
+.friends .card-container .card p {
     font-size: 1.7rem;
     color: #666;
 }
 
-.friends .card-container .card .icons a{
+.friends .card-container .card .icons a {
     font-size: 1.9rem;
     padding: 1.5rem .5rem;
     color: rgba(43, 46, 226, 0.63);
 }
 
-.friends .card-container .card .icons a:hover{
+.friends .card-container .card .icons a:hover {
     color: rgba(0, 0, 0, .3);
 }
 
@@ -279,4 +282,3 @@ body {
     transform: scale(1.1);
     transition: .2s;
 }
-
